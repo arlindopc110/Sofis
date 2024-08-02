@@ -1,0 +1,191 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #252525;
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.9rem;
+}
+
+.navbar-logo img {
+    width: 70px;
+}
+
+.navbar-links {
+    display: none;
+}
+
+.navbar-button {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    background-color: #CE2B37;
+    color: white;
+    padding: 0.8rem 2rem;
+    transition: 0.5s all;
+    border-radius: 0.3rem;
+    border-color: transparent;
+}
+
+.navbar-button a {
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.navbar-button a img {
+    width: 2rem;
+    cursor: pointer;
+}
+
+.navbar-button a span {
+    display: none;
+}
+
+.navbar-button:hover {
+    color: #CE2B37;
+    background-color: white;
+}
+
+.menu-burguer {
+    display: none;
+}
+
+.menu-burguer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Transparent background */
+    backdrop-filter: blur(2px);
+    /* Apply blur effect */
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1000;
+}
+
+.menu-burguer-links {
+    margin-top: -15%;
+}
+
+.menu-burguer-links .link {
+    display: flex;
+    background-color: #CE2B37;
+    border-radius: 5px;
+    padding: 2rem 4rem;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    list-style: none;
+    margin: 2.5rem;
+    font-size: 2.3rem;
+    color: #fff;
+    cursor: pointer
+}
+
+.menu-burguer-links .link:hover {
+    background-color: white;
+    color: #CE2B37;
+}
+
+.button-menu-burguer-invertido {
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    margin: 0 3.5rem 0 3.5rem;
+    border-radius: 14px;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.button-menu-burguer-invertido span {
+    font-family: "Inter", sans-serif;
+    color: #CE2B37;
+    font-size: 24px;
+}
+
+.button-menu-burguer-invertido:hover {
+    background-color: #CE2B37;
+    color: #fff;
+}
+
+.button-menu-burguer-invertido span img:hover {
+    transform: scale(120%);
+    background-color: #fff;
+    border-radius: 20%;
+}
+
+/* --- Media Queries --- */
+@media (min-width: 880px) {
+
+    /* --- NavBar --- */
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 4rem 0 4rem;
+    }
+
+    .navbar-logo img{
+        width: 90px;
+    }
+
+    .navbar-links {
+        display: flex;
+    }
+
+    .navbar-link {
+        display: flex;
+        font-size: 16px;
+        color: white;
+        font-family: "Inter", sans-serif;
+    }
+
+    .navbar-links .navbar-link .link {
+        margin: 0 1.5rem 0 1.5rem;
+        font-size: 18px;
+        font-weight: 500;
+        transition: 0.5s all;
+    }
+
+    .navbar-links .navbar-link .link:hover {
+        cursor: pointer;
+        color: #CE2B37;
+    }
+
+    .navbar-button {
+        display: flex;
+    }
+
+
+    .navbar-button a img {
+        margin-right: 1rem;
+    }
+
+    .navbar-button a span {
+        display: block;
+    }
+
+
+    .menu-burguer-button {
+        display: none;
+    }
+
+    .menu-burguer {
+        display: none;
+    }
+
+    /* --- NavBar --- */
+}

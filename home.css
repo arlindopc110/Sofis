@@ -1,0 +1,174 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.home .home-titulo {
+    font-family: "Inter", sans-serif;
+    width: 100%;
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+    font-size: 2rem;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+
+.home-filtro {
+    display: flex;
+    justify-content: center;
+    background-color: #E8E8E8;
+    cursor: pointer;
+}
+
+.home-filtro-texto {
+    display: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.home-filtro button {
+    display: block;
+    justify-content: center;
+    font-size: 1rem;
+    font-family: "Inter", sans-serif;
+    border-color: transparent;
+    font-weight: 700;
+    background-color: #CE2B37;
+    color: rgb(255, 255, 255);
+    padding: 0.5rem 2rem;
+    transition: 0.5s all;
+    border-radius: 0.3rem;
+    transition: 0.3s all;
+}
+
+.home-filtro button:hover {
+    background-color: #000000;
+    color: #CE2B37;
+}
+
+
+/*Produtos*/
+
+
+.home-produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 2rem 3rem;
+
+}
+
+.home-produtos .home-produto {
+    text-align: start;
+    background-color: #252525;
+    border-radius: 20px;
+    padding-bottom: 1.5rem;
+    color: white;
+}
+
+
+.home .home-produto-img img {
+    width: 18rem;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    transition: 0.5s all;
+    cursor: pointer;
+}
+
+.home .home-produto-img img:hover {
+    transform: scale(105%);
+    border-radius: 14px;
+}
+
+.home-produto-text h3,
+h4 {
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.home-produto-text h4 {
+    color: rgb(22, 193, 22);
+}
+
+.home-produto-text p {
+    margin: 7px 0;
+}
+
+
+.home-produtos .home-produto .home-produto-text {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    padding: 0.8rem;
+}
+
+.home-produto-botao {
+    padding: 0 0 0 0.8rem;
+}
+
+.home-produto-botao button {
+    font-family: "Inter", sans-serif;
+    border-color: transparent;
+    font-weight: 700;
+    background-color: #CE2B37;
+    color: white;
+    padding: 0.8rem 2rem;
+    transition: 0.5s all;
+    border-radius: 0.3rem;
+}
+
+.home-produto-botao button:hover {
+    color: #CE2B37;
+    background-color: white;
+}
+
+@media (min-width: 890px) {
+
+    .home-filtro {
+        margin: 0.3rem 7rem;
+        border-radius: 14px;
+    }
+
+    .home-filtro button {
+        margin: 0rem 0.5rem 0rem 3rem;
+    }
+
+    .home-filtro-texto {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        font-size: 1rem;
+        font-family: "Inter", sans-serif;
+        border-color: transparent;
+        font-weight: 700;
+        color: rgb(0, 0, 0);
+        padding: 0.5rem 2rem;
+        margin: 0rem 0.5rem 0rem 3rem;
+        transition: 0.5s all;
+        border-radius: 0.3rem;
+        transition: 0.3s all;
+    }
+
+    .home-filtro-texto:hover {
+        font-family: "Inter", sans-serif;
+        border-color: transparent;
+        font-weight: 700;
+        background-color: #000000;
+        color: white;
+        transition: 0.5s all;
+        border-radius: 0.3rem;
+    }
+
+}
+
+.home-filtro-texto.filtro-selecionado {
+    background-color: #000000;
+    /* Cor de fundo para o filtro selecionado */
+    color: white;
+    border-radius: 5px;
+}

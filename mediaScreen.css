@@ -1,0 +1,24 @@
+/* ---navbar----*/
+
+@media (min-width: 768px) {
+
+    .navbar-links {
+        display: block;
+    }
+
+    .menu-burguer {
+        display: none;
+    }
+
+    .navbar-links {
+        display: block;
+    }
+
+    .navbar-button {
+        display: none;
+    }
+
+}
+
+
+/* ---navbar----*/

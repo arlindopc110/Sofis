@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./mediaScreen.css">
+    <link rel="stylesheet" href="./navBar.css">
+    <link rel="stylesheet" href="./home.css">
+    <link rel="stylesheet" href="./footer.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sofisticasa</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div id="logo" class="navbar-logo">
+                <img src="./src/img/logo-sofisticasa.svg" alt="">
+            </div>
+
+            <div class="navbar-links">
+                <ul class="navbar-link">
+                    <li class="link">Home</li>
+                    <li class="link">Produtos</li>
+                    <li class="link">Sobre</li>
+                    <li class="link">Contato</li>
+                </ul>
+            </div>
+
+            <div class="navbar-button">
+                <a>
+                    <img src="./src/img/carrinho-de-compras.png" alt="">
+                    <span>Carrinho</span>
+                </a>
+            </div>
+
+            <div class="menu-burguer-button" onclick="menuBurguer()">
+                <img src="./src/img/menu-burguer.svg" alt="menu-hamburguer">
+            </div>
+
+            <div class="menu-burguer">
+                <ul class="menu-burguer-links">
+                    <li class="link">Home</li>
+                    <li class="link">Produtos</li>
+                    <li class="link">Sobre</li>
+                    <li class="link">Contato</li>
+                    <div onclick="exitMenuBurguer()" class="button-menu-burguer-invertido">
+                        <span href="">Fechar</span>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <!-- Conteúdo adicional aqui, se necessário -->
+        </section>
+
+        <section class="home">
+            <div class="home-titulo">
+                <h2>Nossos Produtos</h2>
+            </div>
+
+            <div class="home-filtro">
+                <button>+ Filtros</button>
+                <h3 id="novidades" class="home-filtro-texto" onclick="filtrarProdutos('poltrona')">Poltronas</h3>
+                <h3 id="mais-vendidos" class="home-filtro-texto" onclick="filtrarProdutos('mesa')">Mesas</h3>
+            </div>
+
+            <div class="home-produtos">
+                <div class="home-produto poltrona">
+                    <div class="home-produto-img">
+                        <img src="./src/img/poltrona.jpg" alt="">
+                    </div>
+                    <div class="home-produto-text">
+                        <h3>Poltrona 1</h3>
+                        <p>Estofado de alta qualidade</p>
+                        <h4>R$ 990,00</h4>
+                        <p>10x de R$ 99,00 sem juros</p>
+                    </div>
+                    <div class="home-produto-botao">
+                        <button>Comprar</button>
+                        <button>+ <img src="" alt=""></button>
+                    </div>
+                </div>
+                <div class="home-produto poltrona">
+                    <div class="home-produto-img">
+                        <img src="./src/img/poltrona.jpg" alt="">
+                    </div>
+                    <div class="home-produto-text">
+                        <h3>Poltrona 2</h3>
+                        <p>Estofado de alta qualidade</p>
+                        <h4>R$ 990,00</h4>
+                        <p>10x de R$ 99,00 sem juros</p>
+                    </div>
+                    <div class="home-produto-botao">
+                        <button>Comprar</button>
+                        <button>+ <img src="" alt=""></button>
+                    </div>
+                </div>
+                <div class="home-produto poltrona">
+                    <div class="home-produto-img">
+                        <img src="./src/img/poltrona.jpg" alt="">
+                    </div>
+                    <div class="home-produto-text">
+                        <h3>Poltrona 3</h3>
+                        <p>Estofado de alta qualidade</p>
+                        <h4>R$ 990,00</h4>
+                        <p>10x de R$ 99,00 sem juros</p>
+                    </div>
+                    <div class="home-produto-botao">
+                        <button>Comprar</button>
+                        <button>+ <img src="" alt=""></button>
+                    </div>
+                </div>
+                <div class="home-produto poltrona">
+                    <div class="home-produto-img">
+                        <img src="./src/img/poltrona.jpg" alt="">
+                    </div>
+                    <div class="home-produto-text">
+                        <h3>Poltrona 4</h3>
+                        <p>Estofado de alta qualidade</p>
+                        <h4>R$ 990,00</h4>
+                        <p>10x de R$ 99,00 sem juros</p>
+                    </div>
+                    <div class="home-produto-botao">
+                        <button>Comprar</button>
+                        <button>+ <img src="" alt=""></button>
+                    </div>
+                </div>
+                <div class="home-produto mesa">
+                    <div class="home-produto-img">
+                        <img src="./src/img/mesa.jpg" alt="">
+                    </div>
+                    <div class="home-produto-text">
+                        <h3>Mesa 1</h3>
+                        <p>Alta qualidade</p>
+                        <h4>R$ 990,00</h4>
+                        <p>10x de R$ 99,00 sem juros</p>
+                    </div>
+                    <div class="home-produto-botao">
+                        <button>Comprar</button>
+                        <button>+ <img src="" alt=""></button>
+                    </div>
+                </div>
+                <div class="home-produto mesa">
+                    <div class="home-produto-img">
+                        <img src="./src/img/mesa.jpg" alt="">
+                    </div>
+                    <div class="home-produto-text">
+                        <h3>Mesa 2</h3>
+                        <p>Alta qualidade</p>
+                        <h4>R$ 990,00</h4>
+                        <p>10x de R$ 99,00 sem juros</p>
+                    </div>
+                    <div class="home-produto-botao">
+                        <button>Comprar</button>
+                        <button>+ <img src="" alt=""></button>
+                    </div>
+                </div>
+                <div class="home-produto mesa">
+                    <div class="home-produto-img">
+                        <img src="./src/img/mesa.jpg" alt="">
+                    </div>
+                    <div class="home-produto-text">
+                        <h3>Mesa 3</h3>
+                        <p>Alta qualidade</p>
+                        <h4>R$ 990,00</h4>
+                        <p>10x de R$ 99,00 sem juros</p>
+                    </div>
+                    <div class="home-produto-botao">
+                        <button>Comprar</button>
+                        <button>+ <img src="" alt=""></button>
+                    </div>
+                </div>
+                <div class="home-produto mesa">
+                    <div class="home-produto-img">
+                        <img src="./src/img/mesa.jpg" alt="">
+                    </div>
+                    <div class="home-produto-text">
+                        <h3>Mesa 4</h3>
+                        <p>Alta qualidade</p>
+                        <h4>R$ 990,00</h4>
+                        <p>10x de R$ 99,00 sem juros</p>
+                    </div>
+                    <div class="home-produto-botao">
+                        <button>Comprar</button>
+                        <button>+ <img src="" alt=""></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-conteudo">
+            <h6>&copy; Sofisticasa - Todos os direitos reservados</h6>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

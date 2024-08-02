@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./mediaScreen.css">
     <link rel="stylesheet" href="./navBar.css">
+    <link rel="stylesheet" href="./carrinho.css">
     <link rel="stylesheet" href="./home.css">
     <link rel="stylesheet" href="./footer.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,15 +32,17 @@
                 </ul>
             </div>
 
-            <div class="navbar-button">
-                <a>
-                    <img src="./src/img/carrinho-de-compras.png" alt="">
-                    <span>Carrinho</span>
-                </a>
-            </div>
 
-            <div class="menu-burguer-button" onclick="menuBurguer()">
-                <img src="./src/img/menu-burguer.svg" alt="menu-hamburguer">
+            <div class="navBarButtons">
+                <div class="navbar-button">
+                    <a class="carrinho">
+                        <img src="./src/img/carrinho.png" alt="">
+                        <span>Carrinho</span>
+                    </a>
+                </div>
+                <div class="menu-burguer-button" onclick="menuBurguer()">
+                    <img src="./src/img/menu-burguer.svg" alt="menu-hamburguer">
+                </div>
             </div>
 
             <div class="menu-burguer">
@@ -54,6 +57,34 @@
                 </ul>
             </div>
         </nav>
+
+
+        <nav class="carrinho-compras">
+            <div class="carrinho-conteudo">
+                <div class="carrinho-top">
+                    <img src="./src/img/carrinho.png" alt="">
+                    <h1>Carrinho de Compras</h1>
+                </div>
+                <div class="carrinho-item">
+                    <img src="/src/img/mesa.jpg" alt="">
+                    <div class="carrinho-item-info">
+                        <h2>Mesa 1</h2>
+                        <p>Alta qualidade</p>
+                        <span>R$ 990,00</span>
+                    </div>
+                    <img src="" alt="">
+                </div>
+                <div class="carrinho-limpar">
+                    <button>Limpar carrinho</button>
+                </div>
+                <div>
+                    <h3></h3>
+                    <span></span>
+                </div>
+                <button>FINALIZAR COMPRA</button>
+            </div>
+        </nav>
+
     </header>
 
     <main>
@@ -68,8 +99,8 @@
 
             <div class="home-filtro">
                 <button>+ Filtros</button>
-                <h3 id="novidades" class="home-filtro-texto" onclick="filtrarProdutos('poltrona')">Poltronas</h3>
                 <h3 id="mais-vendidos" class="home-filtro-texto" onclick="filtrarProdutos('mesa')">Mesas</h3>
+                <h3 id="novidades" class="home-filtro-texto" onclick="filtrarProdutos('poltrona')">Poltronas</h3>
             </div>
 
             <div class="home-produtos">

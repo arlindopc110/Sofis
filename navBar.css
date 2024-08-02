@@ -23,26 +23,38 @@ header {
     display: none;
 }
 
+.navBarButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .navbar-button {
     font-family: "Inter", sans-serif;
     font-weight: 700;
-    background-color: #CE2B37;
     color: white;
-    padding: 0.8rem 2rem;
+    padding: 0.5rem 1rem;
     transition: 0.5s all;
     border-radius: 0.3rem;
     border-color: transparent;
+    margin-right: 0.8rem;
 }
+
+.menu-burguer-button {
+    margin-top: 5px;
+    cursor: pointer;
+}
+
 
 .navbar-button a {
     display: flex;
     text-align: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .navbar-button a img {
-    width: 2rem;
-    cursor: pointer;
+    width: 2.6rem;
 }
 
 .navbar-button a span {
@@ -50,8 +62,8 @@ header {
 }
 
 .navbar-button:hover {
-    color: #CE2B37;
-    background-color: white;
+    color: #ffffff;
+    background-color: #CE2B37;
 }
 
 .menu-burguer {
@@ -138,7 +150,7 @@ header {
         margin: 0 4rem 0 4rem;
     }
 
-    .navbar-logo img{
+    .navbar-logo img {
         width: 90px;
     }
 

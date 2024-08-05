@@ -57,3 +57,18 @@ function exibirTodosProdutos() {
 
 // Função para inicializar todos os produtos visíveis
 exibirTodosProdutos();
+
+
+const carrinho = document.querySelector('.carrinho-compras')
+//Abrir Carrinho
+
+function abrirCarrinho() {
+    carrinho.style.display = 'block';
+}
+
+// Fechar Carrinho
+
+
+function fecharCarrinho() {
+    carrinho.style.display = 'none';
+}

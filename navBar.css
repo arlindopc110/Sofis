@@ -40,6 +40,16 @@ header {
     margin-right: 0.8rem;
 }
 
+
+.navbar-button a {
+    text-decoration: none;
+}
+
+.carrinho span {
+    text-decoration: none;
+    color: white;
+}
+
 .menu-burguer-button {
     margin-top: 5px;
     cursor: pointer;

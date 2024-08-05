@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./carrinho.css">
+    <link rel="stylesheet" href="./footer.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho</title>
+</head>
+
+<body>
+
+    <main>
+
+        <nav class="carrinho-compras">
+            <div class="carrinho-conteudo">
+                <div class="carrinho-top">
+                    <a href="./index.html"><span onclick="fecharCarrinho()">⇦</span></a>
+                    <h1>Carrinho de Compras</h1>
+                </div>
+                <div class="carrinho-item">
+                    <img class="foto-produto" src="/src/img/mesa.jpg" alt="">
+                    <div class="carrinho-item-info">
+                        <h2>Mesa 1</h2>
+                        <p>Alta qualidade</p>
+                        <span>R$ 990,00</span>
+                    </div>
+                    <img class="fechar" src="./src/img/x-icon.jpg" alt="">
+                </div>
+                <div class="carrinho-item">
+                    <img class="foto-produto" src="/src/img/mesa.jpg" alt="">
+                    <div class="carrinho-item-info">
+                        <h2>Mesa 1</h2>
+                        <p>Alta qualidade</p>
+                        <span>R$ 990,00</span>
+                    </div>
+                    <img class="fechar" src="./src/img/x-icon.jpg" alt="">
+                </div>
+                <div class="carrinho-item">
+                    <img class="foto-produto" src="/src/img/mesa.jpg" alt="">
+                    <div class="carrinho-item-info">
+                        <h2>Mesa 1</h2>
+                        <p>Alta qualidade</p>
+                        <span>R$ 990,00</span>
+                    </div>
+                    <img class="fechar" src="./src/img/x-icon.jpg" alt="">
+                </div>
+
+            </div>
+        </nav>
+
+        <div class="informacoes">
+            <h3>Informações sobre a compra</h3>
+            <p>
+                Você será encaminhado para um de nossos vendedores para concluir sua compra e obter mais informações
+                sobre pagamento.
+            </p>
+        </div>
+
+        <div class="carrinho-limpar">
+            <button class="carrinho-limpar-button">Limpar carrinho</button>
+            <button class="carrinho-finalizar">FINALIZAR COMPRA</button>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-conteudo">
+            <h6>&copy; Sofisticasa - Todos os direitos reservados</h6>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
